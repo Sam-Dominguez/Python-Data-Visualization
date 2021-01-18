@@ -9,7 +9,7 @@ headers = {'Accept':'application/vnd.github.v3+json'}
 r = requests.get(url, headers=headers)
 print(f"Status code: {r.status_code}")
 
-#Process results
+#Process result
 response_dict = r.json()
 repo_dicts = response_dict['items']
 repo_links, stars, labels = [], [], []
